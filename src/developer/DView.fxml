@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="developer.DViewController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="700.0">
+         <children>
+            <Label layoutX="1.0" prefHeight="63.0" prefWidth="700.0" text="                       DEVELOPERS                                  ">
+               <font>
+                  <Font name="Algerian" size="43.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.2824427471816085" startY="0.20229012001561755">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8631578683853149" green="0.04795321822166443" blue="0.04795321822166443" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.990783410138249">
+                           <color>
+                              <Color red="0.06148148328065872" green="0.8736842274665833" blue="0.18331189453601837" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.06148148328065872" green="0.8736842274665833" blue="0.18331189453601837" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Line endX="178.19998168945312" endY="-7.62939453125E-6" layoutX="333.0" layoutY="63.0" startX="-85.00003051757812" startY="-7.62939453125E-6" />
+            <Line endX="-29.399993896484375" endY="585.199951171875" layoutX="411.0" layoutY="106.0" startX="-29.399993896484375" startY="-42.79999542236328" />
+            <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="45.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Pictures/Saved%20Pictures/IMG_20190926_092217_423.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="248.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/ANJANI%20DEVELPER.jpeg" />
+               </image>
+            </ImageView>
+            <TextArea editable="false" layoutX="10.0" layoutY="236.0" prefHeight="437.0" prefWidth="367.0" text="Eknoor Singh Student of Giani zail singh campus and college of &#10;engineering and technology, B.tech 3rd year.&#10;Anjani patel Student of Giani zail singh campus and college of &#10;engineering  and technology,B.tech 3rd year.&#10;&#10;We both made a project together and during the implementation&#10;we faced a lot of problems and together we figured out their &#10;solution. We learned a lot of new things and explored a lot&#10;of new  things.&#10;&#10;Our project is made in javafx language this is basically a library&#10;in the java that is helpful for  making GUI.&#10;&#10;This is a desktop application which works on the attendance &#10;of the students  and saves their attendance in the database.&#10;&#10; " />
+            <ImageView fitHeight="150.0" fitWidth="154.0" layoutX="464.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/navdeep.jpg" />
+               </image>
+            </ImageView>
+            <TextArea editable="false" layoutX="391.0" layoutY="236.0" prefHeight="263.0" prefWidth="288.0" text="Our project mentor Navdeep mam who is assistant &#10;professor in Computer Science Departmrnt in the&#10;Giani zail singh campus and college of engineeing&#10; and technology. &#10;&#10;In this project, Navdeep mam helped a lot that&#10;he gave new new ideas and if any error had come&#10;anywhere, he would have taken out his solution to&#10;us.&#10;&#10;We thank Navdeep mam who helped a lot in &#10;making this project." />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

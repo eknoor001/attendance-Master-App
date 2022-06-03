@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="insertion.InsertionViewController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="572.0">
+         <children>
+            <Label layoutX="1.0" prefHeight="47.0" prefWidth="526.0" text="                          INSERTION MODULE">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8736842274665833" green="0.16767185926437378" blue="0.07442495226860046" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.20943470299243927" green="0.8004717230796814" blue="0.8315789699554443" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ComboBox fx:id="comboD" layoutX="377.0" layoutY="102.0" prefHeight="26.0" prefWidth="169.0" />
+            <ComboBox fx:id="comboS" layoutX="377.0" layoutY="190.0" prefHeight="26.0" prefWidth="169.0" />
+            <ComboBox fx:id="comboSu" layoutX="377.0" layoutY="273.0" prefHeight="26.0" prefWidth="169.0" />
+            <Label layoutX="286.0" layoutY="270.0" text="SUBJECT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.038830410689115524" green="0.8736842274665833" blue="0.16405847668647766" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007680491551459294">
+                           <color>
+                              <Color red="0.038830410689115524" green="0.8736842274665833" blue="0.16405847668647766" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.12265107035636902" green="0.20253151655197144" blue="0.23157894611358643" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill></Label>
+            <Button layoutX="427.0" layoutY="340.0" mnemonicParsing="false" onAction="#doSave" text="SAVE" textFill="#db0da7">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+            <Line endX="330.39996337890625" endY="0.20000457763671875" layoutX="197.0" layoutY="47.0" startX="31.800018310546875" startY="0.20000457763671875" />
+            <Label layoutX="270.0" layoutY="187.0" text="SEMESTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.038830410689115524" green="0.8736842274665833" blue="0.16405847668647766" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007680491551459294">
+                           <color>
+                              <Color red="0.038830410689115524" green="0.8736842274665833" blue="0.16405847668647766" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.12265107035636902" green="0.20253151655197144" blue="0.23157894611358643" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="285.0" layoutY="99.0" text="BRANCH">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.038830410689115524" green="0.8736842274665833" blue="0.16405847668647766" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007680491551459294">
+                           <color>
+                              <Color red="0.038830410689115524" green="0.8736842274665833" blue="0.16405847668647766" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.12265107035636902" green="0.20253151655197144" blue="0.23157894611358643" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fitHeight="245.0" fitWidth="169.0" layoutX="1.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/BOOK.jpeg" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" layoutX="1.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="169.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" layoutX="1.0" layoutY="55.0" stroke="BLACK" strokeType="INSIDE" width="169.0" />
+            <ImageView fitHeight="150.0" fitWidth="169.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/BOOKK.jpeg" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" layoutX="1.0" layoutY="366.0" stroke="BLACK" strokeType="INSIDE" width="169.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

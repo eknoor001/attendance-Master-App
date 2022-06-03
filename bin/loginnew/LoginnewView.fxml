@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginnew.LoginnewViewController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #DCDCDC;">
+         <children>
+            <TabPane layoutX="10.0" layoutY="13.0" prefHeight="570.0" prefWidth="579.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="     ADMIN    ">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="538.0" prefWidth="579.0">
+                           <children>
+                              <Label layoutX="230.0" layoutY="126.0" prefHeight="35.0" prefWidth="126.0" text="USERNAME" textFill="#151818">
+                                 <font>
+                                    <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="230.0" layoutY="195.0" prefHeight="35.0" prefWidth="142.0" text="PASSWORD" textFill="#151818">
+                                 <font>
+                                    <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtuser" layoutX="360.0" layoutY="131.0" />
+                              <PasswordField fx:id="txtpass" layoutX="357.0" layoutY="200.0" prefHeight="26.0" prefWidth="155.0" />
+                              <Button layoutX="360.0" layoutY="271.0" mnemonicParsing="false" onAction="#dologinn" prefHeight="38.0" prefWidth="70.0" text="LOGIN" textFill="#d90a0a" />
+                              <Label layoutX="96.0" layoutY="22.0" prefHeight="50.0" prefWidth="422.0" text="WELCOME ADMIN" underline="true">
+                                 <font>
+                                    <Font name="Calisto MT" size="42.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.23664122774400784">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.11508771777153015" green="0.7135438323020935" blue="0.8631578683853149" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="0.9052631855010986" green="0.08382066339254379" blue="0.7409746646881104" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fitHeight="155.0" fitWidth="173.0" layoutX="43.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/Login-page-character.png" />
+                                 </image>
+                              </ImageView>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" height="40.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="579.0">
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.3625954334972469">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.3048732876777649" green="0.8357114791870117" blue="0.9684210419654846" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.9969278033794162">
+                                             <color>
+                                                <Color red="0.8105263113975525" green="0.18311890959739685" blue="0.7164152264595032" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="0.8105263113975525" green="0.18311890959739685" blue="0.7164152264595032" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </Rectangle>
+                              <Circle layoutX="86.0" layoutY="464.0" radius="77.0" stroke="BLACK" strokeType="INSIDE">
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="0.9770992357312268" startX="0.7519084124164727">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.07119999825954437" green="0.7906081080436707" blue="0.8899999856948853" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="0.7052631378173828" green="0.14105263352394104" blue="0.6770526170730591" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </Circle>
+                              <Circle layoutX="486.0" layoutY="464.0" radius="77.0" stroke="BLACK" strokeType="INSIDE">
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.3625954334972469">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.3048732876777649" green="0.8357114791870117" blue="0.9684210419654846" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.9969278033794162">
+                                             <color>
+                                                <Color red="0.8105263113975525" green="0.18311890959739685" blue="0.7164152264595032" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="0.8105263113975525" green="0.18311890959739685" blue="0.7164152264595032" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </Circle>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="     USER  ">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="183.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="183.0" prefHeight="78.0" prefWidth="298.0" text="LOGIN" underline="true">
+                                 <font>
+                                    <Font name="Lucida Sans Demibold Italic" size="64.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.23664122774400784">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.11508771777153015" green="0.7135438323020935" blue="0.8631578683853149" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="0.09052631258964539" green="0.9052631855010986" blue="0.30778947472572327" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <Label layoutX="247.0" layoutY="128.0" prefHeight="32.0" prefWidth="112.0" text="USERNAME">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="247.0" layoutY="191.0" prefHeight="32.0" prefWidth="112.0" text="PASSWORD">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtusername" layoutX="372.0" layoutY="131.0" />
+                              <PasswordField fx:id="txtpassword" layoutX="372.0" layoutY="194.0" />
+                              <Button fx:id="btnlogin" layoutX="393.0" layoutY="265.0" mnemonicParsing="false" onAction="#dologin" prefHeight="34.0" prefWidth="93.0" text="LOGIN" textFill="#0de446">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Label layoutX="234.0" layoutY="335.0" prefHeight="32.0" prefWidth="112.0" text="TEACHERS">
+                                 <font>
+                                    <Font name="MV Boli" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="234.0" layoutY="393.0" prefHeight="32.0" prefWidth="112.0" text="STUDENTS">
+                                 <font>
+                                    <Font name="MV Boli" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Hyperlink fx:id="tecregis" layoutX="375.0" layoutY="339.0" onAction="#doregister" prefHeight="24.0" prefWidth="142.0" text="NEW REGISTRATION" underline="true" />
+                              <Hyperlink fx:id="sturegis" layoutX="375.0" layoutY="397.0" onAction="#doRegister" prefHeight="24.0" prefWidth="142.0" text="NEW REGISTRATION" underline="true" />
+                              <ImageView fitHeight="164.0" fitWidth="200.0" layoutX="14.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/Login-page-character.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="26.0" fitWidth="34.0" layoutX="523.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/usernamenewwww.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="47.0" fitWidth="26.0" layoutX="524.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/locy.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <QuadCurve controlX="-0.9999847412109375" controlY="-121.99996948242188" endX="-0.9999847412109375" endY="-121.99993896484375" fill="DODGERBLUE" layoutX="55.0" layoutY="449.0" startX="156.59999084472656" startY="65.20001220703125" stroke="BLACK" strokeType="INSIDE" />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

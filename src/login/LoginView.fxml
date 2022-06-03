@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginViewController">
+   <children>
+      <AnchorPane prefHeight="423.0" prefWidth="501.0">
+         <children>
+            <Label layoutX="-1.0" layoutY="3.0" prefHeight="18.0" prefWidth="501.0" text="                   Login Page">
+               <font>
+                  <Font name="Britannic Bold" size="32.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.708888922797309" centerY="0.7977099309440788" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.09473684430122375" green="0.07333333045244217" blue="0.09223976731300354" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.21267051994800568" green="0.8399999737739563" blue="0.041999999433755875" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <TextField fx:id="txtusername" layoutX="305.0" layoutY="95.0" promptText="username" />
+            <PasswordField fx:id="txtpassword" layoutX="305.0" layoutY="159.0" promptText="password" />
+            <Label layoutX="216.0" layoutY="95.0" text="USERNAME" textFill="#07200e">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="215.0" layoutY="159.0" text="PASSWORD" textFill="#09081e">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnlogin" layoutX="305.0" layoutY="216.0" mnemonicParsing="false" onAction="#dologin" prefHeight="37.0" prefWidth="74.0" text="LOGIN" textFill="#a12104">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Button>
+            <Hyperlink fx:id="tecregis" layoutX="305.0" layoutY="290.0" onAction="#doregister" text=" New Registration" underline="true" />
+            <Hyperlink fx:id="sturegis" layoutX="305.0" layoutY="337.0" onAction="#doRegisterStudents" text=" New Registration" underline="true" />
+            <ImageView fitHeight="150.0" fitWidth="189.0" layoutX="8.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/login.jpeg" />
+               </image>
+            </ImageView>
+            <Line endX="81.4000244140625" endY="-7.62939453125E-6" layoutX="260.0" layoutY="48.0" startX="-81.80000305175781" startY="-7.62939453125E-6" />
+            <Circle fill="#f3f7fa" layoutX="216.0" layoutY="302.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text layoutX="229.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TEACHERS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="228.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENTS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Circle fill="#f3f7fa" layoutX="215.0" layoutY="348.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

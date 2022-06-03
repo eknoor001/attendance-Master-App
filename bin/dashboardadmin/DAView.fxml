@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboardadmin.DAViewController">
+   <children>
+      <AnchorPane layoutY="-4.0" prefHeight="700.0" prefWidth="676.0">
+         <children>
+            <Label layoutX="167.0" layoutY="14.0" prefHeight="55.0" prefWidth="342.0" text="WELCOME ADMIN" underline="true">
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.6000000238418579" green="0.2796069383621216" blue="0.2280000001192093" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.1122807040810585" green="0.7083041071891785" blue="0.8421052694320679" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Button layoutX="87.0" layoutY="211.0" mnemonicParsing="false" onAction="#doOpendatabase" prefHeight="34.0" prefWidth="126.0" text="OPEN DATABASE" textFill="#06d43b">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Button layoutX="282.0" layoutY="211.0" mnemonicParsing="false" onAction="#doAttendance" prefHeight="34.0" prefWidth="126.0" text="ATTENDANCE FORM" textFill="#06d409">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Button layoutX="482.0" layoutY="211.0" mnemonicParsing="false" onAction="#doCalu1" prefHeight="34.0" prefWidth="146.0" text="CALCULATION TABLE" textFill="#06d41e">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Button layoutX="87.0" layoutY="383.0" mnemonicParsing="false" onAction="#doCalcu2" prefHeight="34.0" prefWidth="136.0" text="CALCULATION TABLE2" textFill="#06d409">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Button layoutX="277.0" layoutY="383.0" mnemonicParsing="false" onAction="#doPermission" prefHeight="34.0" prefWidth="136.0" text="GIVE PERMISSION" textFill="#06d425">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Button layoutX="482.0" layoutY="385.0" mnemonicParsing="false" onAction="#doInsertion" prefHeight="34.0" prefWidth="146.0" text="INSERT SUBJECTS" textFill="#06d41b">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Button layoutX="87.0" layoutY="561.0" mnemonicParsing="false" onAction="#doTeachersRegistration" prefHeight="34.0" prefWidth="162.0" text="TEACHER REGISTRATION" textFill="#06d429">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Button layoutX="277.0" layoutY="561.0" mnemonicParsing="false" onAction="#doStudentRegistration" prefHeight="34.0" prefWidth="155.0" text="STUDENT REGISTRATION" textFill="#0fd406">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="btngo" layoutX="510.0" layoutY="561.0" mnemonicParsing="false" onAction="#doClose" prefHeight="34.0" prefWidth="90.0" text="CLOSE" />
+            <Circle fill="#e1e5ea" layoutX="150.0" layoutY="148.0" radius="55.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text layoutX="122.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLICK" wrappingWidth="56.2620849609375">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Polygon fill="#e1e8ef" layoutX="180.0" layoutY="171.0" points="-29.800018310546875, 40.0, -16.800018310546875, -15.0, -41.600006103515625, -15.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#e1e5ea" layoutX="345.0" layoutY="149.0" radius="55.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text layoutX="318.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLICK" wrappingWidth="56.2620849609375">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Polygon fill="#e1e8ef" layoutX="375.0" layoutY="171.0" points="-29.800018310546875, 40.0, -16.800018310546875, -15.0, -41.600006103515625, -15.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#e1e5ea" layoutX="545.0" layoutY="149.0" radius="55.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text layoutX="515.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLICK" wrappingWidth="56.2620849609375">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Polygon fill="#e1e8ef" layoutX="574.0" layoutY="171.0" points="-29.800018310546875, 40.0, -16.800018310546875, -15.0, -41.600006103515625, -15.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#e1e5ea" layoutX="151.0" layoutY="320.0" radius="55.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#e1e5ea" layoutX="346.0" layoutY="320.0" radius="55.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#e1e5ea" layoutX="545.0" layoutY="320.0" radius="55.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#e1e5ea" layoutX="163.0" layoutY="498.0" radius="55.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#e1e5ea" layoutX="345.0" layoutY="498.0" radius="55.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text layoutX="122.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLICK" wrappingWidth="56.2620849609375">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="318.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLICK" wrappingWidth="56.2620849609375">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="515.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLICK" wrappingWidth="56.2620849609375">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="135.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLICK" wrappingWidth="56.2620849609375">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="317.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLICK" wrappingWidth="56.2620849609375">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Polygon fill="#e1e8ef" layoutX="180.0" layoutY="346.0" points="-29.800018310546875, 40.0, -16.800018310546875, -15.0, -41.600006103515625, -15.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#e1e8ef" layoutX="574.0" layoutY="348.0" points="-29.800018310546875, 40.0, -16.800018310546875, -15.0, -41.600006103515625, -15.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#e1e8ef" layoutX="374.0" layoutY="346.0" points="-29.800018310546875, 40.0, -16.800018310546875, -15.0, -41.600006103515625, -15.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#e1e8ef" layoutX="192.0" layoutY="522.0" points="-29.800018310546875, 40.0, -16.800018310546875, -15.0, -41.600006103515625, -15.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#e1e8ef" layoutX="375.0" layoutY="522.0" points="-29.800018310546875, 40.0, -16.800018310546875, -15.0, -41.600006103515625, -15.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

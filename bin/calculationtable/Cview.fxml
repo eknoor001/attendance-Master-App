@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculationtable.CviewController">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="7.0" prefHeight="731.0" prefWidth="848.0">
+         <children>
+            <Label layoutX="10.0" layoutY="6.0" prefHeight="34.0" prefWidth="768.0" text="                               CALCULATION MASTER">
+               <font>
+                  <Font name="Bell MT" size="30.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.9312976662439244" endY="0.4160305498210528" startX="0.3778625672100155" startY="0.8931297682623827">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.0608999989926815" green="0.8700000047683716" blue="0.3368358314037323" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8736842274665833" green="0.038830410689115524" blue="0.038830410689115524" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Line endX="276.60003662109375" layoutX="317.0" layoutY="41.0" startX="-73.80000305175781" />
+            <ComboBox fx:id="combodprt" layoutX="41.0" layoutY="95.0" onAction="#doDprt" prefWidth="150.0" />
+            <ComboBox fx:id="combosem" layoutX="229.0" layoutY="95.0" onAction="#doSem" prefWidth="150.0" />
+            <ComboBox fx:id="combosec" layoutX="418.0" layoutY="95.0" onAction="#doSec" prefWidth="150.0" />
+            <ComboBox fx:id="comboSubject" layoutX="613.0" layoutY="95.0" onAction="#doSubject" prefWidth="150.0" />
+            <Label layoutX="41.0" layoutY="63.0" text="DEPARTMENT">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="229.0" layoutY="63.0" text="SEMESTER">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="418.0" layoutY="63.0" text="SECTION">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="613.0" layoutY="63.0" text="SUBJECT">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <ListView fx:id="lista" layoutX="41.0" layoutY="173.0" onMouseClicked="#doListKam" prefHeight="174.0" prefWidth="150.0" />
+            <DatePicker fx:id="datapickera" layoutX="229.0" layoutY="173.0" onAction="#doDate" prefHeight="32.0" prefWidth="150.0" />
+            <Label layoutX="229.0" layoutY="141.0" text="DATE PICKER">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="141.0" text="URN">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button layoutX="451.0" layoutY="164.0" mnemonicParsing="false" onAction="#doShowAll" prefHeight="42.0" prefWidth="102.0" text="SHOW ALL">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="594.0" layoutY="164.0" mnemonicParsing="false" onAction="#doShow" prefHeight="42.0" prefWidth="102.0" text="SHOW">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <TableView fx:id="tbldhmaka" layoutX="41.0" layoutY="389.0" prefHeight="312.0" prefWidth="738.0" />
+            <Label layoutX="318.0" layoutY="342.0" text="RECORDS SHOWS HERE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="17.0" layoutX="41.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="738.0" />
+            <TextField fx:id="txthi" layoutX="655.0" layoutY="273.0" visible="false" />
+            <Button layoutX="228.0" layoutY="252.0" mnemonicParsing="false" onAction="#doFetchExcel" prefHeight="42.0" prefWidth="244.0" text="SHOW DATA IN EXCEL SHEET">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

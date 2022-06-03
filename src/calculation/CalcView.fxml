@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculation.CalcViewController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="956.0">
+         <children>
+            <Label layoutX="-1.0" layoutY="1.0" prefHeight="23.0" prefWidth="802.0" text="                             CALCULATION MASTER">
+               <font>
+                  <Font name="Baskerville Old Face" size="32.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.4656488476818755">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8631578683853149" green="0.03836257383227348" blue="0.03836257383227348" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007680491551459294">
+                           <color>
+                              <Color red="0.8631578683853149" green="0.03836257383227348" blue="0.03836257383227348" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.06592592597007751" green="0.7481436133384705" blue="0.9368420839309692" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Line endX="277.199951171875" layoutX="333.0" layoutY="49.0" startX="-100.0" />
+            <ComboBox fx:id="combodprt" layoutX="19.0" layoutY="103.0" onAction="#doDprt" prefWidth="150.0" />
+            <ComboBox fx:id="combosem" layoutX="200.0" layoutY="103.0" onAction="#doSem" prefWidth="150.0" />
+            <Label layoutX="19.0" layoutY="68.0" prefHeight="18.0" prefWidth="150.0" text="DEPARTMENT">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.5152671755725191" endY="0.6145038158838985" startX="0.1488549609220665">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8526315689086914" green="0.08210526406764984" blue="0.7113684415817261" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="200.0" layoutY="68.0" prefHeight="18.0" prefWidth="150.0" text="SEMESTER">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.5152671755725191" endY="0.6145038158838985" startX="0.1488549609220665">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8526315689086914" green="0.08210526406764984" blue="0.7113684415817261" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ComboBox fx:id="combosec" layoutX="387.0" layoutY="103.0" onAction="#dosec" prefWidth="150.0" />
+            <Label layoutX="387.0" layoutY="68.0" prefHeight="18.0" prefWidth="150.0" text="SECTION">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.5152671755725191" endY="0.6145038158838985" startX="0.1488549609220665">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8526315689086914" green="0.08210526406764984" blue="0.7113684415817261" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Button layoutX="215.0" layoutY="170.0" mnemonicParsing="false" onAction="#doShow" prefHeight="34.0" prefWidth="134.0" text="SHOW RECORDS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.5152671755725191" endY="0.6145038158838985" startX="0.39312977372235014">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.03688109293580055" green="0.9052631855010986" blue="0.19608446955680847" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007680491551459294">
+                           <color>
+                              <Color red="0.03688109293580055" green="0.9052631855010986" blue="0.19608446955680847" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.11595375835895538" green="0.08500000089406967" blue="0.8500000238418579" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <TableView fx:id="tblshow" layoutX="9.0" layoutY="250.0" prefHeight="442.0" prefWidth="726.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="26.0" layoutX="17.0" layoutY="224.0" stroke="BLACK" strokeType="INSIDE" width="720.0">
+               <fill>
+                  <LinearGradient endX="0.5152671755725191" endY="0.6145038158838985" startX="0.5038167820632002">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.04500000178813934" green="0.7976142168045044" blue="0.8999999761581421" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007680491551459294">
+                           <color>
+                              <Color red="0.04500000178813934" green="0.7976142168045044" blue="0.8999999761581421" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.11595375835895538" green="0.08500000089406967" blue="0.8500000238418579" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Label layoutX="571.0" layoutY="68.0" prefHeight="18.0" prefWidth="150.0" text="SUBJECT">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.5152671755725191" endY="0.6145038158838985" startX="0.1488549609220665">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8526315689086914" green="0.08210526406764984" blue="0.7113684415817261" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ComboBox fx:id="combosubs1" layoutX="571.0" layoutY="103.0" onAction="#dosub" prefHeight="26.0" prefWidth="134.0" />
+            <ListView fx:id="listkuch" layoutX="747.0" layoutY="239.0" onMouseDragged="#doKuch" prefHeight="232.0" prefWidth="176.0" visible="false" />
+            <TextField fx:id="txthlo" layoutX="747.0" layoutY="175.0" visible="false" />
+            <TextField fx:id="txthi" layoutX="747.0" layoutY="129.0" visible="false" />
+            <Button layoutX="395.0" layoutY="170.0" mnemonicParsing="false" onAction="#doExcel" prefHeight="34.0" prefWidth="222.0" text="FETCH DATA IN EXCEL SHEET">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.5152671755725191" endY="0.6145038158838985" startX="0.39312977372235014">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.03688109293580055" green="0.9052631855010986" blue="0.19608446955680847" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007680491551459294">
+                           <color>
+                              <Color red="0.03688109293580055" green="0.9052631855010986" blue="0.19608446955680847" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.11595375835895538" green="0.08500000089406967" blue="0.8500000238418579" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="dashboard.DbViewController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #A9A9A9;">
+         <children>
+            <Label layoutX="-1.0" prefHeight="32.0" prefWidth="600.0" text="                   DASHBOARD">
+               <font>
+                  <Font name="Algerian" size="38.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.8702290076335878" endY="1.0" startX="0.8549618038512369">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.3574983775615692" green="0.38947367668151855" blue="0.11539960652589798" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.2761124074459076" green="0.3052631616592407" blue="0.055399611592292786" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fitHeight="151.0" fitWidth="145.0" layoutX="40.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/AttendanceImage.jpeg" />
+               </image>
+            </ImageView>
+            <Button layoutX="39.0" layoutY="219.0" mnemonicParsing="false" onAction="#doAttendance" prefHeight="26.0" prefWidth="145.0" text="ATTENDANCE" textFill="#2511d4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="145.0" fitWidth="134.0" layoutX="234.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/CALCULATION.jpeg" />
+               </image>
+            </ImageView>
+            <Button layoutX="230.0" layoutY="218.0" mnemonicParsing="false" onAction="#doCalculation" prefHeight="30.0" prefWidth="122.0" text="CALCULATION" textFill="#2511d4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="145.0" fitWidth="145.0" layoutX="386.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/record.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="386.0" layoutY="218.0" mnemonicParsing="false" onAction="#doRetreive" prefHeight="30.0" prefWidth="146.0" text="RETREIVE RECORD" textFill="#2511d4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="145.0" fitWidth="146.0" layoutX="39.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/INSERTION1.jpeg" />
+               </image>
+            </ImageView>
+            <Button layoutX="39.0" layoutY="466.0" mnemonicParsing="false" onAction="#doInsert" prefHeight="30.0" prefWidth="146.0" text="INSERT SUBJECTS" textFill="#2511d4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="134.0" fitWidth="122.0" layoutX="234.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/HLO.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="234.0" layoutY="466.0" mnemonicParsing="false" onAction="#doStudent" prefHeight="30.0" prefWidth="129.0" text="STUDENT DATA" textFill="#2511d4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="146.0" layoutX="386.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/D2.jpeg" />
+               </image>
+            </ImageView>
+            <Button layoutX="386.0" layoutY="466.0" mnemonicParsing="false" onAction="#dodevelopers" prefHeight="30.0" prefWidth="146.0" text="DEVELOPERS" textFill="#2511d4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
