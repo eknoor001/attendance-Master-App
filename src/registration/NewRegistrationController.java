@@ -224,7 +224,7 @@ public class NewRegistrationController {
 
    	}
     
-
+Int a;
 
 
 private static void sendEmail(String message, String subject,String user, String password, String to, String from) 
@@ -293,7 +293,7 @@ void showMsg2(String msg)
 //	String host="pop.gmail.com";
 //	String mailStoreType="pop3";
 //	String username="eknoorgreat001@gmail.com";
-//	String password="9877614193";
+
 //	recieveEmail(host,mailStoreType,username,password);
 //	
 //}
@@ -384,7 +384,7 @@ void showMsg2(String msg)
 		 //  Scene scene1=(Scene)btnSubmit.getScene();
 		 //  scene1.getWindow().hide();
          
-// 		Properties properties=new Properties();
+// 		Properties  properties=new Properties();
 // 		//properties.setProperty("mail.imaps.host","imaps.gmail.com");
 // 	//	properties.setProperty("mail.imaps.port","993");
 // 		properties.setProperty("mail.imap.ssl.enable", "true");
